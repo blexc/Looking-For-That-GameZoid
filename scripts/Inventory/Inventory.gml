@@ -1,7 +1,19 @@
-function get_candle(_inst)
+function how_many_candles_in_inventory()
 {
-	with (oPlayer) interact_radius += UNIT;
-	add_to_inventory(_inst);
+	var _num_candles = 0;
+	with (oInventory)
+	{
+		var _size = ds_list_size(inventory_list);
+		for (var i = 0; i < _size; i++)
+		{
+			var _item = inventory_list[| i];
+			if (_item.object_index == oCandle)
+			{
+				_num_candles++;
+			}
+		}
+	}
+	return _num_candles;
 }
 
 function add_to_inventory(_inst)

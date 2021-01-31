@@ -16,6 +16,7 @@ sprite_index = sprite_idle;
 local_frame = 0;
 
 can_interact = false;
-interact_radius = 2 * UNIT;
+interact_radius_start = 2 * UNIT;
+interact_radius = interact_radius_start
 xcenter = x + sprite_width / 2;
 ycenter = y + sprite_height / 2;

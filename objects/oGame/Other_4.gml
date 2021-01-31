@@ -13,6 +13,7 @@ if (layer_exists("Solid"))
 			{
 				instance_create_layer(_x * UNIT, _y * UNIT, "Instances", oSolid);
 				oSolid.visible = false;
+				oSolid.solid = false;
 			}
 		}
 	}

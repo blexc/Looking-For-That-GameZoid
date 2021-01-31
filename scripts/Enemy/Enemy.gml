@@ -1,27 +1,33 @@
 function enemy_update_wander_point()
 {
-	xwander = UNIT + irandom(room_width - UNIT);
-	ywander = UNIT + irandom(room_height - UNIT);
+	xwander = x;
+	ywander = y;
+	
+	var _ten_units = UNIT * 10;
+	var _change_x = choose(true, false);
+	
+	if (_change_x) xwander += irandom_range(-_ten_units, _ten_units);
+	else		   ywander += irandom_range(-_ten_units, _ten_units);
+
+	xwander = clamp(xwander, 1, room_width - 1);
+	ywander = clamp(ywander, 1, room_width - 1);
+	
+	if (solid_at_point(xwander, ywander)) enemy_update_wander_point();
 }
 
 function enemy_state_idle()
 {
-	image_alpha = 1;
 	image_blend = c_white;
 	image_index = 0;
 	move_speed_target = move_speed_idle;
 	angle = point_direction(x, y, xwander, ywander);
 	
-	if (distance_to_point(xwander, ywander) < 1)
+	if (mp_potential_step(xwander, ywander, move_speed, 0))
 		enemy_update_wander_point();
-	else
-		mp_potential_step(xwander, ywander, move_speed, 0);
 	
 	// find a new point
 	while (collision_line_ext(x, y, xwander, ywander, oSolid, 0, 1, UNIT))
-	{
 		enemy_update_wander_point();
-	}
 	
 	// find player
 	if (instance_exists(oPlayer))
@@ -35,7 +41,6 @@ function enemy_state_idle()
 }
 function enemy_state_seek()
 {
-	image_alpha = 1;
 	image_blend = c_white;
 	move_speed_target = move_speed_seek;
 	angle = point_direction(x, y, xseen, yseen);
@@ -53,18 +58,13 @@ function enemy_state_seek()
 		{
 			alarm[2] = room_speed; // wait before going to room
 			with (oPlayer)
-			{
 				state = player_state_in_trouble;
-			}
 			state = enemy_state_idle;
 			return;
 		}
 		
-		if (distance_to_point(xseen, yseen) > 0)
-		{
-			mp_potential_step(xseen, yseen, move_speed, 0);
-		}
-		else
+		if (mp_potential_step(xseen, yseen, move_speed, 0) ||
+			distance_to_object(oPlayer) > 120)
 		{
 			state = enemy_state_idle;
 			enemy_update_wander_point();

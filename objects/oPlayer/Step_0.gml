@@ -4,6 +4,12 @@ var _left = 0;
 var _right = 0;
 var _interact = 0;
 
+// increase radius every time you get a candle
+interact_radius = interact_radius_start + 
+	how_many_candles_in_inventory() * UNIT;
+	
+interact_radius = oscillate(interact_radius, 0.3, 1);
+
 if (can_move)
 {
 	_up = K_UP;
@@ -17,11 +23,16 @@ xcenter = x + sprite_width / 2;
 ycenter = y + sprite_height / 2;
 
 can_interact = point_in_circle(mouse_x, mouse_y, xcenter, ycenter, interact_radius);
-if (can_interact && _interact)
+if (can_interact)
 {
 	with (collision_point(mouse_x, mouse_y, pInteractible, true, true))
 	{
-		alarm[0] = 1; // in 1 frame, do your script
+		alarm[9] = 2;
+		mouse_hovering_over_me = true;
+		if (_interact)
+		{
+			alarm[0] = 1; // in 1 frame, do your script
+		}
 	}
 }
 

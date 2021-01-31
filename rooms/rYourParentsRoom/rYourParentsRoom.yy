@@ -50,6 +50,9 @@
           ],"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"inheritCode":true,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_5824802A","path":"rooms/rParent/rParent.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":16.0,"resourceVersion":"1.0","name":"door_lime4","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCameraEnemy","path":"objects/oCameraEnemy/oCameraEnemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":112.0,"y":96.0,"resourceVersion":"1.0","name":"inst_4875D7EC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCameraEnemy","path":"objects/oCameraEnemy/oCameraEnemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":160.0,"resourceVersion":"1.0","name":"inst_1342D269","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"color","path":"objects/pInteractible/pInteractible.yy",},"objectId":{"name":"pInteractible","path":"objects/pInteractible/pInteractible.yy",},"value":"c_ltgray","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oCandle","path":"objects/oCandle/oCandle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":208.0,"y":64.0,"resourceVersion":"1.0","name":"inst_17350929","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tTileset","path":"tilesets/tTileset/tTileset.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":15,"SerialiseHeight":15,"TileSerialiseData":[
 0,1,1,1,1,1,1,1,1,1,1,1,1,1,2147483648,
@@ -80,6 +83,7 @@
     {"name":"door_lime4","path":"rooms/rYourParentsRoom/rYourParentsRoom.yy",},
     {"name":"inst_4875D7EC","path":"rooms/rYourParentsRoom/rYourParentsRoom.yy",},
     {"name":"inst_1342D269","path":"rooms/rYourParentsRoom/rYourParentsRoom.yy",},
+    {"name":"inst_17350929","path":"rooms/rYourParentsRoom/rYourParentsRoom.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,
