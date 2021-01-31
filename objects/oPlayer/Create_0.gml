@@ -12,3 +12,8 @@ sprite_walk = sPlayerMove;
 image_speed = 0;
 sprite_index = sprite_idle;
 local_frame = 0;
+
+can_interact = false;
+interact_radius = 2 * UNIT;
+xcenter = x + sprite_width / 2;
+ycenter = y + sprite_height / 2;

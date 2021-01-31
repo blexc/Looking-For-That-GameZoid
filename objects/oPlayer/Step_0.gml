@@ -10,7 +10,19 @@ if (can_move)
 	_down = K_DOWN;
 	_left = K_LEFT;
 	_right = K_RIGHT;
-	_interact = M_LEFT;
+	_interact = M_LEFT_PRESSED;
+}
+
+xcenter = x + sprite_width / 2;
+ycenter = y + sprite_height / 2;
+
+can_interact = point_in_circle(mouse_x, mouse_y, xcenter, ycenter, interact_radius);
+if (can_interact && _interact)
+{
+	with (collision_point(mouse_x, mouse_y, pInteractible, true, true))
+	{
+		alarm[0] = 15; // in 15 frames, do your script
+	}
 }
 
 horizontal = _right - _left;

@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 159,
+  "bbox_right": 15,
   "bbox_top": 0,
-  "bbox_bottom": 159,
+  "bbox_bottom": 15,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 160,
-  "height": 160,
+  "width": 16,
+  "height": 16,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"cfe7977c-4627-40f6-9d8c-8969cbc9ee49","path":"sprites/sTitleScreen/sTitleScreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cfe7977c-4627-40f6-9d8c-8969cbc9ee49","path":"sprites/sTitleScreen/sTitleScreen.yy",},"LayerId":{"name":"beb5e563-bf58-4c73-8cfc-6a8b720f71c6","path":"sprites/sTitleScreen/sTitleScreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTitleScreen","path":"sprites/sTitleScreen/sTitleScreen.yy",},"resourceVersion":"1.0","name":"cfe7977c-4627-40f6-9d8c-8969cbc9ee49","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4db85b79-fde8-4f69-9127-3f581be91b53","path":"sprites/sGameZoid/sGameZoid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4db85b79-fde8-4f69-9127-3f581be91b53","path":"sprites/sGameZoid/sGameZoid.yy",},"LayerId":{"name":"0ead9a2d-a7f2-4900-9ec4-13696710273d","path":"sprites/sGameZoid/sGameZoid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGameZoid","path":"sprites/sGameZoid/sGameZoid.yy",},"resourceVersion":"1.0","name":"4db85b79-fde8-4f69-9127-3f581be91b53","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sTitleScreen","path":"sprites/sTitleScreen/sTitleScreen.yy",},
+    "spriteId": {"name":"sGameZoid","path":"sprites/sGameZoid/sGameZoid.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"76c1074a-d809-4253-b78b-dfdf55d9c476","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cfe7977c-4627-40f6-9d8c-8969cbc9ee49","path":"sprites/sTitleScreen/sTitleScreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"edc985df-a8f6-4547-8ef4-d0b4083489ae","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4db85b79-fde8-4f69-9127-3f581be91b53","path":"sprites/sGameZoid/sGameZoid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sTitleScreen","path":"sprites/sTitleScreen/sTitleScreen.yy",},
+    "parent": {"name":"sGameZoid","path":"sprites/sGameZoid/sGameZoid.yy",},
     "resourceVersion": "1.3",
-    "name": "sTitleScreen",
+    "name": "sGameZoid",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"beb5e563-bf58-4c73-8cfc-6a8b720f71c6","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0ead9a2d-a7f2-4900-9ec4-13696710273d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sTitleScreen",
+  "name": "sGameZoid",
   "tags": [],
   "resourceType": "GMSprite",
 }
