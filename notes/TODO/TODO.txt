@@ -1,0 +1,6 @@
+door abstraction:
+	- teleporters (portals) instead of door
+	- create a player spawner for each room, instead of just placing the player wherever
+	- or just make better doors
+	
+pause menu

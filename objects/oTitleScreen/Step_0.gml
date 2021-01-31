@@ -1,4 +1,4 @@
 /// @description transition to start of game
 
-if (keyboard_check_pressed(vk_anykey))
-	transition_start(rYourRoom);
+if (M_LEFT_PRESSED)
+	transition_start(global.starting_room);

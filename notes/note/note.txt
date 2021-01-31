@@ -1,5 +1,0 @@
-camera enemy
- - collide with his light child object -> he will chase you
- - if you hit his own hit box, you go to your room
- - same with mom, if she will exist at all...
- 

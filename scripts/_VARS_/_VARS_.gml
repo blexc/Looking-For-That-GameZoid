@@ -17,6 +17,7 @@
 #macro K_DOWN_PRESSED keyboard_check_pressed(ord("S"))
 #macro K_RIGHT_PRESSED keyboard_check_pressed(ord("D"))
 
+global.starting_room = rYourRoom;
 global.window_scale = 4;
 
 // for oTransition

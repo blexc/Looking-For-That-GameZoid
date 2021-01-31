@@ -20,6 +20,12 @@ function add_to_inventory(_inst)
 // returns whether or not you have the right key
 function door_open(_inst, _room)
 {
+	if (_inst.image_blend == c_white)
+	{
+		transition_start(_room);
+		return true;
+	}
+	
 	with (oInventory)
 	{
 		var _size = ds_list_size(inventory_list);
@@ -34,6 +40,22 @@ function door_open(_inst, _room)
 		}
 	}
 	
+	return false;
+}
+
+// if item in inventory AND is the same color
+function is_in_inventory_color(_obj, _color)
+{
+	with (oInventory)
+	{
+		var _size = ds_list_size(inventory_list);
+		for (var i = 0; i < _size; i++)
+		{
+			var _item = inventory_list[| i];
+			if (_obj == _item.object_index &&
+				_color == _item.image_blend) return true;
+		}
+	}
 	return false;
 }
 
