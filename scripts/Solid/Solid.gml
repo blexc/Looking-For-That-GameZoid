@@ -12,3 +12,9 @@ function solid_at(_this, _x, _y)
 		return _top_left || _top_right || _bottom_left || _bottom_right; 
 	}
 }
+
+function solid_at_point(_x, _y)
+{
+	var _solid = layer_tilemap_get_id(layer_get_id("Solid"));
+	return tilemap_get_at_pixel(_solid, _x, _y);
+}

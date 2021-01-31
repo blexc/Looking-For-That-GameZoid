@@ -8,6 +8,7 @@ is_moving = false;
 
 sprite_idle = sPlayerIdle;
 sprite_walk = sPlayerMove;
+sprite_trouble = sPlayerTrouble;
 
 image_speed = 0;
 sprite_index = sprite_idle;

@@ -9,6 +9,11 @@ function deg_to_cardinal(direction_degrees){
 	return floor(direction_degrees/90);
 }
 
+function round_to_nearest(_value, _nearest)
+{
+	return round(_value / _nearest) * _nearest;
+}
+
 // returns a string with 0's padded to the right
 // EX: _string = "123", _total_digits = 4
 // output: "0123"
@@ -97,4 +102,18 @@ function approach(_current, _target, _delta)
 function reset_alpha()
 {
 	draw_set_alpha(1);	
+}
+
+function collision_line_ext(_x1, _y1, _x2, _y2, _obj, _prec, _notme, _thick)
+{
+	var _top_left = collision_line(
+		_x1, _y1, _x2, _y2, _obj, _prec, _notme);
+	var _top_right = collision_line(
+		_x1 + _thick, _y1, _x2 + _thick, _y2, _obj,_prec, _notme);
+	var _bottom_left = collision_line(
+		_x1, _y1 + _thick, _x2, _y2 + _thick, _obj, _prec, _notme);
+	var _bottom_right = collision_line(
+		_x1 + _thick, _y1 + _thick, _x2 + _thick, _y2 + _thick, _obj, _prec, _notme);
+	
+	return _top_left || _top_right || _bottom_left || _bottom_right;
 }

@@ -1,3 +1,9 @@
+function get_candle(_inst)
+{
+	with (oPlayer) interact_radius += UNIT;
+	add_to_inventory(_inst);
+}
+
 function add_to_inventory(_inst)
 {
 	with (oInventory)

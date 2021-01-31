@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Interactible",
-    "path": "folders/Objects/Persistent/Interactible.yy",
+    "path": "folders/Objects/Interactible.yy",
   },
   "resourceVersion": "1.0",
   "name": "pInteractible",

@@ -1,7 +1,7 @@
 /// @description randomize move_speed
 
 move_speed = choose(1, 2, 2, 2, 2, 2, 2, 2, 2, 3);
-if (debug_mode) move_speed = 3;
+if (debug_mode) move_speed = 2;
 
 switch (move_speed)
 {
