@@ -29,6 +29,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"Transition","path":"scripts/Transition/Transition.yy",},"order":2,},
     {"id":{"name":"sSolid1","path":"sprites/sSolid1/sSolid1.yy",},"order":9,},
+    {"id":{"name":"oEnemySpawner","path":"objects/oEnemySpawner/oEnemySpawner.yy",},"order":7,},
     {"id":{"name":"rParent","path":"rooms/rParent/rParent.yy",},"order":4,},
     {"id":{"name":"oHowToPlay","path":"objects/oHowToPlay/oHowToPlay.yy",},"order":1,},
     {"id":{"name":"rCredits","path":"rooms/rCredits/rCredits.yy",},"order":9,},

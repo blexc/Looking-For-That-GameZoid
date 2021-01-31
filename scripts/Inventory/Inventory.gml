@@ -1,3 +1,8 @@
+function inventory_count()
+{
+	with (oInventory) return ds_list_size(inventory_list);
+}
+
 function remove_last_key()
 {
 	with (oInventory)
