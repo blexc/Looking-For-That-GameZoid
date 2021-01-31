@@ -6,7 +6,7 @@ function print(_string)
 }
 
 function deg_to_cardinal(direction_degrees){
-	return floor(direction_degrees/90);
+	return round(direction_degrees/90);
 }
 
 function round_to_nearest(_value, _nearest)

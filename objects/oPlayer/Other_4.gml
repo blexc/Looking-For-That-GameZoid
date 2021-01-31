@@ -1,10 +1,11 @@
 /// @description randomize move_speed
 
-move_speed = choose(1, 2, 2, 2, 2, 2, 2, 2, 2, 3);
+var s = 2, m = 3, l = 4;
+move_speed = choose(s, m, m, m, m, m, m, m, m, l);
 
 switch (move_speed)
 {
-	case 1: image_blend = $bdfff5; break; // light blue
-	case 3: image_blend = $ffbdbd; break; // light red
+	case s: image_blend = $95fff5; break; // light blue
+	case l: image_blend = $ff7878; break; // light red
 	default: image_blend = c_white; break;
 }

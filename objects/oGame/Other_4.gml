@@ -1,15 +1,21 @@
 /// @description create solid objects
 
-if (layer_exists("Solid")) layer_set_visible("Solid", false);
-
-for (var _x = 0; _x < room_width / UNIT; _x++)
+if (layer_exists("Solid"))
 {
-	for (var _y = 0; _y < room_height / UNIT; _y++)
+	layer_set_visible("Solid", false);
+
+	/*
+	for (var _x = 0; _x < room_width / UNIT; _x++)
 	{
-		if (solid_at_point(_x * UNIT, _y * UNIT))
+		for (var _y = 0; _y < room_height / UNIT; _y++)
 		{
-			instance_create_layer(_x * UNIT, _y * UNIT, "Instances", oSolid);
-			oSolid.visible = false;
+			if (solid_at_point(_x * UNIT, _y * UNIT))
+			{
+				instance_create_layer(_x * UNIT, _y * UNIT, "Instances", oSolid);
+				oSolid.visible = false;
+			}
 		}
 	}
+	*/
 }
+

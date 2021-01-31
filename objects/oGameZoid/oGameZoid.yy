@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "pInteractible",
+    "path": "objects/pInteractible/pInteractible.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -22,10 +25,13 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"my_script","path":"objects/pInteractible/pInteractible.yy",},"objectId":{"name":"pInteractible","path":"objects/pInteractible/pInteractible.yy",},"value":"transition_start","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"my_script_args","path":"objects/pInteractible/pInteractible.yy",},"objectId":{"name":"pInteractible","path":"objects/pInteractible/pInteractible.yy",},"value":"[rCredits]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Interactible",
+    "path": "folders/Objects/Interactible.yy",
   },
   "resourceVersion": "1.0",
   "name": "oGameZoid",

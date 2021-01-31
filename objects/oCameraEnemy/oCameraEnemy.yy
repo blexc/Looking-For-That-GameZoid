@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sCamera",
-    "path": "sprites/sCamera/sCamera.yy",
+    "name": "sCameraIdle",
+    "path": "sprites/sCameraIdle/sCameraIdle.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,6 +28,7 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oCameraEnemy","path":"objects/oCameraEnemy/oCameraEnemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"parent":{"name":"oCameraEnemy","path":"objects/oCameraEnemy/oCameraEnemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":2,"eventType":2,"collisionObjectId":null,"parent":{"name":"oCameraEnemy","path":"objects/oCameraEnemy/oCameraEnemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oCameraEnemy","path":"objects/oCameraEnemy/oCameraEnemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [
@@ -35,8 +36,8 @@
     {"propertyId":{"name":"my_script_args","path":"objects/pInteractible/pInteractible.yy",},"objectId":{"name":"pInteractible","path":"objects/pInteractible/pInteractible.yy",},"value":"[id]","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Interactible",
+    "path": "folders/Objects/Interactible.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCameraEnemy",

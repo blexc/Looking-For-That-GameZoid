@@ -4,6 +4,7 @@ can_move = true;
 move_speed = 5;
 xvelocity = 0;
 yvelocity = 0;
+angle = 0;
 is_moving = false;
 
 sprite_idle = sPlayerIdle;

@@ -21,7 +21,7 @@ if (can_interact && _interact)
 {
 	with (collision_point(mouse_x, mouse_y, pInteractible, true, true))
 	{
-		alarm[0] = 1; // in 15 frames, do your script
+		alarm[0] = 1; // in 1 frame, do your script
 	}
 }
 
@@ -29,14 +29,12 @@ horizontal = _right - _left;
 vertical = _down - _up;
 if (horizontal != 0) vertical = 0;
 is_moving = horizontal != 0 || vertical != 0;
-if (is_moving) direction = point_direction(0, 0, horizontal, vertical);
-
+if (is_moving) angle = point_direction(0, 0, horizontal, vertical);
 script_execute(state);
 
 // animations
 var _old_sprite = sprite_index;
 sprite_index = (is_moving) ? sprite_walk : sprite_idle;
-
 if (_old_sprite != sprite_index) local_frame = 0;
 
 if (state != player_state_in_trouble) Animate();
