@@ -35,6 +35,8 @@ function door_open(_inst, _room)
 	if (_inst.image_blend == c_white)
 	{
 		transition_start(_room);
+		global.spawner_color = c_white;
+		global.spawner_number = 0;
 		return true;
 	}
 	
@@ -47,6 +49,8 @@ function door_open(_inst, _room)
 			if (_item.image_blend == _inst.image_blend)
 			{
 				transition_start(_room);
+				global.spawner_color = _inst.image_blend;
+				global.spawner_number = _inst.door_number;
 				return true;	
 			}
 		}

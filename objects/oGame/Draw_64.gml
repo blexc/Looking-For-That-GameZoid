@@ -10,8 +10,14 @@ draw_text(GUIW, GUIH, _room_name);
 // shade
 if (instance_exists(oPlayer))
 {
-	var _alpha = (oPlayer.state == player_state_in_trouble) ? 0 : 0.3;
+	var _alpha;
+	
+	if (oPlayer.state == player_state_in_trouble) _alpha = 0;
+	else _alpha = 0.15;
+
 	set_draw(c_black, _alpha);
-	draw_rectangle(0, 0, GUIW, GUIH, false);
+	draw_rectangle_color(0, 0, GUIW, GUIH, c_white, c_black, c_black, c_black, false);
+	draw_rectangle_color(0, 0, GUIW, GUIH, c_black, c_black, c_black, c_black, false);
+	draw_rectangle_color(0, 0, GUIW, GUIH, c_black, c_black, c_black, c_black, false);
 }
 reset_alpha();

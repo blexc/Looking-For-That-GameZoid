@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description change light shape
 
 image_xscale = 1.1;
 image_xscale = oscillate(image_yscale, 0.1, 1);

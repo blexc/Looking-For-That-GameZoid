@@ -30,7 +30,7 @@ function enemy_state_idle()
 		enemy_update_wander_point();
 	
 	// find player
-	if (instance_exists(oPlayer))
+	if (instance_exists(oPlayer) && alarm[2] == -1)
 	{
 		with (my_light)
 		{

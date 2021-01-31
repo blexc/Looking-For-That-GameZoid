@@ -32,4 +32,5 @@ function player_state_in_trouble()
 {
 	sprite_index = sprite_trouble;
 	image_speed = 0.1;
+
 }

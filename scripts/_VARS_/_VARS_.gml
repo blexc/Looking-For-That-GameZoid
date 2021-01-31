@@ -19,6 +19,8 @@
 
 global.starting_room = rYourRoom;
 global.window_scale = 4;
+global.spawner_color = c_white;
+global.spawner_number = 0; // for tie-breakers between doors of same color
 
 // for oTransition
 enum TRANS_MODE
