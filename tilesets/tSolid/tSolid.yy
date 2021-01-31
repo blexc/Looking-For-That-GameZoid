@@ -1,5 +1,4 @@
 {
-  "name": "tSolid",
   "spriteId": {
     "name": "sSolid",
     "path": "sprites/sSolid/sSolid.yy",
@@ -39,6 +38,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tSolid",
   "tags": [],
   "resourceType": "GMTileSet",
 }

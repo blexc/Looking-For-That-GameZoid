@@ -27,11 +27,3 @@ function PlayerStateMove()
 		y += yvelocity;
 	}
 }
-
-function player_get_key(_color)
-{
-	with (oPlayer)
-	{
-		print("got key!");
-	}
-}
