@@ -1,3 +1,24 @@
+function remove_last_key()
+{
+	with (oInventory)
+	{
+		var _size = ds_list_size(inventory_list);
+		for (var i = _size - 1; i >= 0; i-=1)
+		{
+			var _item = inventory_list[| i];
+			if (_item.object_index == oKey &&
+				_item.image_blend != c_white)
+			{
+				_item.visible = false;
+				_item.x = _item.xstart;
+				_item.y = _item.ystart;
+				ds_list_delete(inventory_list, i);
+				return;
+			}
+		}
+	}
+}
+
 function how_many_candles_in_inventory()
 {
 	var _num_candles = 0;

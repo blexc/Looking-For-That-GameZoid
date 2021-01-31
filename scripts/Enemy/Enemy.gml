@@ -9,8 +9,8 @@ function enemy_update_wander_point()
 	if (_change_x) xwander += irandom_range(-_ten_units, _ten_units);
 	else		   ywander += irandom_range(-_ten_units, _ten_units);
 
-	xwander = clamp(xwander, 1, room_width - 1);
-	ywander = clamp(ywander, 1, room_width - 1);
+	xwander = clamp(xwander, UNIT, room_width - UNIT);
+	ywander = clamp(ywander, UNIT, room_height - UNIT);
 	
 	if (solid_at_point(xwander, ywander)) enemy_update_wander_point();
 }
