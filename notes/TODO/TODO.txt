@@ -1,6 +1,3 @@
 you win screen (cutscene??)
 more art
-music
-
-random camera enemies
-redo camera sprite
+music/sfx

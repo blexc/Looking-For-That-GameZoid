@@ -4,6 +4,9 @@ var _layer_name = "Light";
 if (!layer_exists(_layer_name)) layer_create(0, _layer_name);
 my_light = instance_create_layer(x, y, _layer_name, oCameraLight);
 
+sound_alert = sfxAlert;
+sound_playing = false;
+
 sprite_idle = sCameraIdle;
 sprite_seek = sCameraSeek;
 

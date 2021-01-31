@@ -53,13 +53,16 @@ function enemy_state_seek()
 			yseen = oPlayer.y;
 		}
 		
-		// collision detection
+		// you've caught the player
 		if (place_meeting(x, y, oPlayer) && alarm[2] == -1)
 		{
 			alarm[2] = room_speed; // wait before going to room
 			with (oPlayer)
 				state = player_state_in_trouble;
 			state = enemy_state_idle;
+			
+			if (!audio_is_playing(sfxTrouble))
+				audio_play_sound(sfxTrouble, 0, false);
 			return;
 		}
 		
@@ -82,7 +85,7 @@ function enemy_state_frez()
 function enemy_freeze(_inst)
 {
 	with (_inst)
-	{
+	{	
 		state = enemy_state_frez;
 		instance_deactivate_object(my_light);
 		alarm[1] = freeze_time;

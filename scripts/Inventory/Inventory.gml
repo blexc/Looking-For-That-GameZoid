@@ -14,10 +14,18 @@ function remove_last_key()
 			if (_item.object_index == oKey &&
 				_item.image_blend != c_white)
 			{
+				with (instance_create_depth(0, 0, -9999, oFakeKey))
+				{
+					xx = UNIT * i
+					yy = 0;
+					color = _item.image_blend;
+				}
+				
 				_item.visible = false;
 				_item.x = _item.xstart;
 				_item.y = _item.ystart;
 				ds_list_delete(inventory_list, i);
+				
 				return;
 			}
 		}
