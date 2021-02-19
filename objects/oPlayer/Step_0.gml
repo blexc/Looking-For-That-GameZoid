@@ -22,20 +22,6 @@ if (can_move)
 xcenter = x + sprite_width / 2;
 ycenter = y + sprite_height / 2;
 
-can_interact = point_in_circle(mouse_x, mouse_y, xcenter, ycenter, interact_radius);
-if (can_interact)
-{
-	with (collision_point(mouse_x, mouse_y, pInteractible, true, true))
-	{
-		alarm[9] = 2;
-		mouse_hovering_over_me = true;
-		if (_interact)
-		{
-			alarm[0] = 1; // in 1 frame, do your script
-		}
-	}
-}
-
 horizontal = _right - _left;
 vertical = _down - _up;
 if (horizontal != 0) vertical = 0;

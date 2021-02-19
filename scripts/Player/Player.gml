@@ -25,6 +25,20 @@ function PlayerStateMove()
 			yvelocity = 0
 		}
 		y += yvelocity;
+		
+		can_interact = point_in_circle(mouse_x, mouse_y, xcenter, ycenter, interact_radius);
+		if (can_interact)
+		{
+			with (collision_point(mouse_x, mouse_y, pInteractible, true, true))
+			{
+				alarm[9] = 2;
+				mouse_hovering_over_me = true;
+				if (M_LEFT_PRESSED)
+				{
+					alarm[0] = 1; // in 1 frame, do your script
+				}
+			}
+		}
 	}
 }
 
