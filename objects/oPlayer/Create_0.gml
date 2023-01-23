@@ -1,7 +1,7 @@
 state = PlayerStateMove;
 
 can_move = true;
-move_speed = 5;
+move_speed = 0; // set at room_start
 xvelocity = 0;
 yvelocity = 0;
 angle = 0;

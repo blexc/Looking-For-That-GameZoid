@@ -1,4 +1,8 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "mSneakingForGameZoid",
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mSneakingForGameZoid.ogg",
-  "duration": 78.37235,
+  "duration": 78.367355,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "mSneakingForGameZoid",
-  "tags": [],
-  "resourceType": "GMSound",
 }

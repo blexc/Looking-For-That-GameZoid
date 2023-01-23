@@ -1,6 +1,6 @@
 /// @description randomize move_speed
 
-var ss = 1, s = 2, m = 3, l = 4;
+var ss = 0.5, s = 1, m = 2, l = 3;
 move_speed = choose(s, m, m, m, m, m, m, m, m, m, l);
 if (0.01 > random(1)) move_speed = ss;
 
